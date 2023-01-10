@@ -1,0 +1,183 @@
+
+body {
+
+    color: #000;
+    background-color: #1F444A;
+
+}
+
+p {
+
+    color: cornsilk;
+
+}
+
+#Cfinal{
+	
+    position: absolute;
+	border-radius: 0px;
+    left: 7%;	
+	width: 90%;
+	top: 50%;
+	
+}
+
+
+#tabelaMenu {
+    position: absolute;
+    left: 10%;
+
+}
+
+#textoFinal, #usuarios {
+    text-align: center;
+
+}
+
+progress::-webkit-progress-bar {
+    background: white;
+    border-radius: 50px;
+    padding: 2px;
+}
+progress::-moz-progress-bar {  
+    background: white;
+    border-radius: 50px;
+    padding: 2px;
+}
+
+
+progress.barraCandidatoExe::-webkit-progress-value {
+    border-radius: 50px;
+    background:green;
+}
+
+progress.barraCandidatoRaz::-webkit-progress-value {
+    border-radius: 50px;
+    background:blue;
+}
+
+progress.barraCandidatoRuim::-webkit-progress-value {
+    border-radius: 50px;
+    background:red;
+}
+
+progress.barraCandidatoSo::-webkit-progress-value {
+    border-radius: 50px;
+    background:gray;
+}
+
+
+progress{
+	background-color: #1F444A;
+}
+
+
+
+img.imgCandidatos { /*Aqui você alinha o texto ao lado da imagem de candidato*/
+    float: left;
+    padding: 3px;
+    margin: 0px 10px 10px 0;
+    max-width: 300px;
+}
+
+progress { /*Aqui você alinha o texto ao lado da imagem de candidato*/
+    float: left;
+    margin: 1px 5px 5px 0;
+    max-width: 250px;
+}
+
+.header { /*Cabeçalho*/
+    text-align: center;
+    width: 98.5%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial;
+    color: #1fffa7;
+    background: #353336;
+    background-color: #13242a;
+}
+
+.conteinerMenu {
+
+    display: inline;
+    width: 29%; /*Afastamento do menu e o painel de 3 cards*/
+    float: left;
+
+}
+
+/*Cards Menu*/
+.cardM {
+
+    margin: 0.5%;
+    font-size: 20px;
+    font-family: Arial;
+    color: #1fffa7;
+    border: 0px;
+    background: #353336;
+    width: 300px;
+    height: 35px;
+
+}
+
+.cardM:hover {
+
+    color: #353336;
+    background-color: #698b8c;
+}
+
+.cardM:active {
+
+    background-color: #1fffa7;
+    transform: translateY(1.5px);
+}
+
+.Confirma {
+
+    margin: 0.5%;
+    font-size: 20px;
+    font-family: Arial;
+    color: #333234;
+    border: 0px;
+    background: #a3dcae;
+    width: 300px;
+    height: 35px;
+
+}
+
+.Confirma:hover {
+
+    color: #353336;
+    background-color: #698b8c;
+}
+
+.Confirma:active {
+
+    background-color: #1fffa7;
+    transform: translateY(1.5px);
+}
+
+/*Cards */
+
+.card {
+    font-size: 15px;
+    font-family: Arial;
+    color: #1fffa7;
+    border: 0px;
+    background: #353336;
+    width: 150px;
+    height: 25px;
+
+}
+
+.card:hover {
+
+    color: #353336;
+    background-color: #698b8c;
+}
+
+.card:active {
+
+    background-color: #1fffa7;
+    transform: translateY(1.5px);
+}
+

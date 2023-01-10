@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cards</title>
+		<link rel="stylesheet" href="css/cards.css">
+		<script src="js/jsActive.js"></script>
+	</head>
+	<body onload="carregamento()">
+
+		<div class="header">
+			<H1>Pesquisa Presidencial 2018 <img src="img/Redescoberta_do_Brasil.png" width="60" height="60"/></H1>
+		</div>
+		<hr>
+		<!-- Inicio Menu -->
+		<div id="menu" class="conteinerMenu">
+			<table>
+				<tr>
+					<td>
+						<input type="button" id="Menu1" class="cardM" value="Jair Bolsonaro" onclick="menu(this)">
+						<!-- <img src="img/partido/psc bolsonaro.png" width="70" height="23"/> -->
+
+						<input type="button" id="Menu2" class="cardM" value="Luis Inacio Lula da Silva" onclick="menu(this)">
+						<!-- <img src="img/partido/PT lula.png" width="70" height="23"/>-->
+
+						<input type="button" id="Menu3" class="cardM" value="Aécio Neves" onclick="menu(this)">
+						<!--<img src="img/partido/PSDB.png  " width="70" height="23"/>-->
+
+						<input type="button" id="Menu4" class="cardM" value="Marina Silva" onclick="menu(this)">
+						<!-- <img src="img/partido/PSB.png" width="65" height="23"/>-->
+
+						<input type="button" id="Menu5" class="cardM" value="Geraldo Alckmin" onclick="menu(this)">
+						<!-- <img src="img/partido/PSDB.png  " width="70" height="23"/>-->
+
+						<input type="button" id="Menu6" class="cardM" value="José serra" onclick="menu(this)">
+						<!--<img src="img/partido/PSDB.png  " width="70" height="23"/>-->
+						<input type="button" id="Confirma" class="Confirma" value="Finalizar pesquisa!" onclick="revela()">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- Fim Menu -->
+		<br>
+		<br>
+		<br>
+		<!-- inicio Titulo -->
+		<div id="opt0" class="conteinerCards">
+			<table>
+				<tr>
+					<td>
+						<p>Bem vindo ao site de pesquisa presidencial 2018, aqui você escolhe seu candidato e mostra sua opinião
+					  <br> através dos votos. Por favor, antes de finalizar certifique-se de dar sua opnião em todos os candidatos
+					  <br> do menu a esquerda, faremos ao final um levantamento de todas as notas registradas.</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- Fim Titulo -->
+		<!-- Inicio Perguntas | Inicio Conteiner de perguntas 01 -->
+		<div id="opt1" class="conteinerCards">
+			<table>
+				<tr>
+					<td colspan="2">
+						<img class="imgCandidatos" src="img/candidato/Bolsonaro.jpg" width="197" height="216"/>
+						<p>
+							Jair Messias Bolsonaro é um militar da reserva e político brasileiro.<br>
+							Cumpre atualmente o seu sexto mandato na Câmara dos Deputados do Brasil, eleito pelo
+							Partido
+							Progressista.
+							<p id = "flagVoto1"></p>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="card1" class="card" value="Excelente" onclick="pontuado1(1)">
+						<input type="button" id="card2" class="card" value="Razoavel" onclick="pontuado1(2)">
+						<input type="button" id="card3" class="card" value="Ruim" onclick="pontuado1(3)">
+						<input type="button" id="card4" class="card" value="Sem opinião" onclick="pontuado1(4)">
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- fim Conteiner de perguntas 01 -->
+		<!-- Inicio Conteiner de perguntas 02 -->
+		<div id="opt2" class="conteinerCards">
+			<table>
+				<tr>
+					<td colspan="2">
+						<img class="imgCandidatos" src="img/candidato/Lula.jpg" width="197" height="216"/>
+						<p>
+							Luiz Inácio Lula da Silva, é um político,ex-sindicalista e ex-metalúrgico
+							brasileiro. Filiado ao
+							Partido dos trabalhadores
+							<p id = "flagVoto2"></p>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<p id = "flagVoto2"></p>
+						<input type="button" id="card5" class="card" value="Excelente" onclick="pontuado2(1)">
+						<input type="button" id="card6" class="card" value="Razoavel" onclick="pontuado2(2)">
+						<input type="button" id="card7" class="card" value="Ruim" onclick="pontuado2(3)">
+						<input type="button" id="card8" class="card" value="Sem opinião" onclick="pontuado2(4)">
+	
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- fim Conteiner de perguntas 02 -->
+		<!-- Inicio Conteiner de perguntas 03 -->
+		<div id="opt3" class="conteinerCards">
+			<table>
+				<tr>
+					<td colspan="2"><img class="imgCandidatos" src="img/candidato/Aecio.png" width="197" height="216"/>
+						<p>
+							Aécio Neves da Cunha é um economista e político brasileiro, filiado ao Partido da
+							Social Democracia
+							Brasileira.<br>
+							Foi o décimo sétimo governador de Minas Gerais entre 1.º de janeiro de 2003 a 31 de
+							março de 2010.
+						<p id = "flagVoto3"></p>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+
+						<input type="button" id="card9" class="card" value="Excelente" onclick="pontuado3(1)">
+						<input type="button" id="card10" class="card" value="Razoavel" onclick="pontuado3(2)">
+						<input type="button" id="card11" class="card" value="Ruim" onclick="pontuado3(3)">
+						<input type="button" id="card12" class="card" value="Sem opinião" onclick="pontuado3(4)">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- fim Conteiner de perguntas 03 -->
+		<!-- Inicio Conteiner de perguntas 04 -->
+		<div id="opt4" class="conteinerCards">
+			<table>
+				<tr>
+					<td colspan="2"><img class="imgCandidatos" src="img/candidato/marina.png" width="197" height="216"/>
+						<p>
+							Maria Osmarina Marina Silva Vaz de Lima, nascida Maria Osmarina da Silva é uma
+							historiadora, <br>
+							professora, psicopedagoga, ambientalista, e política brasileira filiada à Rede
+							Sustentabilidade
+							<p id = "flagVoto4"></p>
+						</p>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="card13" class="card" value="Excelente" onclick="pontuado4(1)">
+						<input type="button" id="card14" class="card" value="Razoavel" onclick="pontuado4(2)">
+						<input type="button" id="card15" class="card" value="Ruim" onclick="pontuado4(3)">
+						<input type="button" id="card16" class="card" value="Sem opinião" onclick="pontuado4(4)">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- fim Conteiner de perguntas 04 -->
+		<!-- Inicio Conteiner de perguntas 05 -->
+		<div id="opt5" class="conteinerCards">
+			<table>
+				<tr>
+					<td colspan="2"><img class="imgCandidatos" src="img/candidato/Alkmin.jpg" width="197" height="216"/>
+						<p>Geraldo José Rodrigues Alckmin Filho é um médico e político brasileiro, <br>
+							filiado ao Partido da Social Democracia Brasileira e atual Governador do Estado de
+							São Paulo, cargo que ocupa pela quarta vez.
+							<p id = "flagVoto5"></p>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="card17" class="card" value="Excelente" onclick="pontuado5(1)">
+						<input type="button" id="card18" class="card" value="Razoavel" onclick="pontuado5(2)">
+						<input type="button" id="card19" class="card" value="Ruim" onclick="pontuado5(3)">
+						<input type="button" id="card20" class="card" value="Sem opinião"
+							   onclick="pontuado5(4)">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- fim Conteiner de perguntas 05 -->
+		<!-- Inicio Conteiner de perguntas 06 -->
+		<div id="opt6" class="conteinerCards">
+			<table>
+				<tr>
+					<td colspan="2"><img class="imgCandidatos" src="img/candidato/Serra.jpg" width="197" height="216"/>
+						<p>José Serra é um político brasileiro. Filiado ao Partido da <br>
+							Social Democracia Brasileira, é Senador pelo Estado de São Paulo.
+							<p id = "flagVoto6"></p>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" id="card21" class="card" value="Excelente" onclick="pontuado6(1)">
+						<input type="button" id="card22" class="card" value="Razoavel" onclick="pontuado6(2)">
+						<input type="button" id="card23" class="card" value="Ruim" onclick="pontuado6(3)">
+						<input type="button" id="card24" class="card" value="Sem opinião" onclick="pontuado6(4)">
+					</td>
+				</tr>
+			</table>
+
+
+		</div>
+
+		<!-- Fim Conteiner de perguntas 06 -->
+		<!-- Fim Perguntas -->
+
+		<!-- Inicio Botão de confirmação -->
+
+		<!-- Fim Botão de confirmação -->
+
+		<div align="middle" id="Dash">
+			<p id="textoFinal">Obrigado pela sua opnião, convide mais pessoas para que nossa base de dados seja  melhor</p><br>
+			<p id= "usuarios"></p>
+			<input type ="button"  id="return" class="cardM" value="RETORNAR" onclick=resetar()>	
+			<table id = "Cfinal">
+					<tr>
+						<td>
+							<progress id="barra1" class="barraCandidatoExe" value="0" max="1"></progress>
+							<progress id="barra12" class="barraCandidatoRaz" value="0" max="1"></progress>
+							<progress id="barra13" class="barraCandidatoRuim" value="0" max="1"></progress>
+							<progress id="barra14" class="barraCandidatoSo" value="0" max="1"></progress>
+						</td>
+						<td>
+							<progress id="barra2" class="barraCandidatoExe" value="0" max="1"></progress>
+							<progress id="barra22" class="barraCandidatoRaz" value="0" max="1"></progress>
+							<progress id="barra23" class="barraCandidatoRuim" value="0" max="1"></progress>
+							<progress id="barra24" class="barraCandidatoSo" value="0" max="1"></progress>
+						</td>
+						<td>
+							<progress id="barra3" class="barraCandidatoExe" value="0" max="1"></progress>
+							<progress id="barra32" class="barraCandidatoRaz" value="0" max="1"></progress>
+							<progress id="barra33" class="barraCandidatoRuim" value="0" max="1"></progress>
+							<progress id="barra34" class="barraCandidatoSo" value="0" max="1"></progress>
+						</td>
+						<td>
+							<progress id="barra4" class="barraCandidatoExe" value="0" max="1"></progress>
+							<progress id="barra42" class="barraCandidatoRaz" value="0" max="1"></progress>
+							<progress id="barra43" class="barraCandidatoRuim" value="0" max="1"></progress>
+							<progress id="barra44" class="barraCandidatoSo" value="0" max="1"></progress>
+						</td>
+						<td>
+							<progress id="barra5" class="barraCandidatoExe" value="0" max="1"></progress>
+							<progress id="barra52" class="barraCandidatoRaz" value="0" max="1"></progress>
+							<progress id="barra53" class="barraCandidatoRuim" value="0" max="1"></progress>
+							<progress id="barra54" class="barraCandidatoSo" value="0" max="1"></progress>
+						</td>
+						<td>
+							<progress id="barra6" class="barraCandidatoExe" value="0" max="1"></progress>
+							<progress id="barra62" class="barraCandidatoRaz" value="0" max="1"></progress>
+							<progress id="barra63" class="barraCandidatoRuim" value="0" max="1"></progress>
+							<progress id="barra64" class="barraCandidatoSo" value="0" max="1"></progress>
+						</td>
+					</tr>
+				<tr>
+					<td class="tdDep">                
+						<img class="imgCandidatos" src="img/candidato/Bolsonaro.jpg" width="150" height="180"/>
+					</td>			
+					<td class="tdDep">               
+						<img class="imgCandidatos" src="img/candidato/Lula.jpg" width="150" height="180"/>
+					</td>			
+					<td class="tdDep">
+						<img class="imgCandidatos" src="img/candidato/Aecio.png" width="150" height="180"/>
+					</td>			
+					<td class="tdDep">
+						<img class="imgCandidatos" src="img/candidato/marina.png" width="150" height="180"/>
+					</td>
+					<td class="tdDep">
+						<img class="imgCandidatos" src="img/candidato/Alkmin.jpg" width="150" height="180"/>
+					</td>
+					<td class="tdDep">
+						<img class="imgCandidatos" src="img/candidato/Serra.jpg" width="150" height="180"/>
+					</td>
+				</tr>
+			</table>
+			
+			
+		</div>
+	</body>
+</html>
